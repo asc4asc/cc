@@ -81,7 +81,7 @@ function clickevent() {
 
 // changecolor();
 
-document.body.addEventListener(clickevent);
+document.body.addEventListener("click",clickevent);
 
 
 
