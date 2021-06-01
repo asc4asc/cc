@@ -5,6 +5,7 @@ tmp.style.backgroundColor = "lightblue";
 
 let i=1;
 let stop=0;
+let conti=0;
 var elem = document.documentElement;
 
 // setInterval(changecolor, 3000);
@@ -67,22 +68,24 @@ function changecolor() {
     default:
      tmp.style.backgroundColor = "yellow"; 
   } 
-  setTimeout(changecolor, getRndInteger(2, 5));
+  if ( conti == 0 ) { setTimeout(changecolor, getRndInteger(2, 5)); }
 }
 
 function clickevent() {
 switch(i) {
     case 1:
-      tmp.style.backgroundColor = "green"; 
+      tmp.style.backgroundColor = "orange"; 		
       break;
     case 2:
-      tmp.style.backgroundColor = "red"; 
+      conti = 0;		
+      changecolor();
       break;
     case 3:
-      tmp.style.backgroundColor = "blue"; 
+      conti = 1;		
+      tmp.style.backgroundColor = "black"; 
       break;	  
     default:
-     tmp.style.backgroundColor = "yellow"; 
+      tmp.style.backgroundColor = "white"; 
     }
     i=i+1; if ( i > 3 ) { i = 0; }
 }
