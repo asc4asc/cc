@@ -84,7 +84,7 @@ switch(i) {
     default:
       conti = 1;				 
     }
-    i=i+1; if ( i > 0 ) { i = 0; }
+    i=i+1; if ( i > 1 ) { i = 0; }
 }
 
 // changecolor();
