@@ -75,7 +75,7 @@ function changecolor() {
   setTimeout(changecolor, getRndInteger(2, 5));
 }
 
-procedure clickevent() {
+function clickevent() {
      tmp.style.backgroundColor = "orange"; 
 }
 
