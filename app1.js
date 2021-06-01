@@ -89,4 +89,4 @@ switch(i) {
 
 // changecolor();
 
-document.body.addEventListener("onclick",clickevent);
+document.body.addEventListener("click",clickevent);
