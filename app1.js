@@ -53,36 +53,40 @@ function getRndInteger(min, max) {
 }
 
 function changecolor() {
-  // let tmp=document.querySelector("body");
   let i = Math.floor(Math.random() * 4);
   switch(i) {
     case 1:
       tmp.style.backgroundColor = "green"; 
-      // i=2;
       break;
     case 2:
       tmp.style.backgroundColor = "red"; 
-      // i=3;
       break;
     case 3:
       tmp.style.backgroundColor = "blue"; 
-      // i=0;
       break;	  
     default:
      tmp.style.backgroundColor = "yellow"; 
-     // i=1;
   } 
   setTimeout(changecolor, getRndInteger(2, 5));
 }
 
 function clickevent() {
-     tmp.style.backgroundColor = "orange"; 
+switch(i) {
+    case 1:
+      tmp.style.backgroundColor = "green"; 
+      break;
+    case 2:
+      tmp.style.backgroundColor = "red"; 
+      break;
+    case 3:
+      tmp.style.backgroundColor = "blue"; 
+      break;	  
+    default:
+     tmp.style.backgroundColor = "yellow"; 
+    }
+    i=i+1; if ( i > 3 ) { i = 0; }
 }
 
 // changecolor();
 
 document.body.addEventListener("click",clickevent);
-
-
-
-
