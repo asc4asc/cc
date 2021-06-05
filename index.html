@@ -20,7 +20,14 @@
     <h1 class="title">Test App! Test</h1>
     <clock></clock>
   </div>
-  
+  <script src="js/NoSleep.min.js"></script>
+  <script>
+    var nos = new NoSleep();
+    nos.enable(); // keep the screen on!
+    // noSleep.disable(); // let the screen turn off.
+    document.body.style.backgroundColor = "green";  
+  </script>  
+    
   <script src="app1.js"></script>
   <script src="js/main.js"></script>
 </body>
